@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "pictureURL": "https://i.ibb.co/Gc1s39W/AADU0004-AACD0052-1-400x.jpg",
+        "toyName": "SUPERMAN: MAN OF STEEL",
+        "sellerName": "Super Toys Inc.",
+        "sellerEmail": "seller@supertoys.com",
+        "subCategory": "DC Superhero",
+        "price": 19.99,
+        "rating": 4.5,
+        "availableQuantity": 10,
+        "description": "The Man of Steel is bringing his Kryptonian powers and the quest for truth and justice to your collection with the Superman Man of Steel Edition One:12 Collective 1/12th Scale Action Figure by Mezco Toys. This highly detailed action figure stands approximately 6.29” tall with over 30 points of articulation and comes outfitted in his iconic suit that proudly displays the ‘House of El’ family crest on the chest, as well as featuring a cape with an integrated posing wire."
+      },
+    {
+        "id": 2,
+        "pictureURL": "https://i.ibb.co/Gc1s39W/AADU0004-AACD0052-1-400x.jpg",
+        "toyName": "SUPERMAN: MAN OF STEEL",
+        "sellerName": "Super Toys Inc.",
+        "sellerEmail": "seller@supertoys.com",
+        "subCategory": "DC Superhero",
+        "price": 19.99,
+        "rating": 4.5,
+        "availableQuantity": 10,
+        "description": "The Man of Steel is bringing his Kryptonian powers and the quest for truth and justice to your collection with the Superman Man of Steel Edition One:12 Collective 1/12th Scale Action Figure by Mezco Toys. This highly detailed action figure stands approximately 6.29” tall with over 30 points of articulation and comes outfitted in his iconic suit that proudly displays the ‘House of El’ family crest on the chest, as well as featuring a cape with an integrated posing wire."
+      }
+]

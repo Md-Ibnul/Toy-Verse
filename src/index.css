@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.my-container{
+    @apply mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl 
+  }
+
+  .my-btn{
+    @apply py-3 px-8 bg-red-600 text-white font-bold border-none hover:bg-slate-800 transition-all ease-linear duration-300
+  }
