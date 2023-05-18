@@ -31,10 +31,10 @@ const ToysNav = () => {
   <div className="navbar-center hidden lg:flex relative">
     <ul className="menu menu-horizontal px-1">
       <li><NavLink className={({ isActive }) => (isActive ? "active" : "default")} to='/'>Home</NavLink></li>
-      <li><Link to='/'>All Toys</Link></li>
-      <li><Link to='/'>My Toys</Link></li>
-      <li><Link to='/'>Add Toys</Link></li>
-      <li><Link to='/'>Blog</Link></li>
+      <li><NavLink className={({ isActive }) => (isActive ? "active" : "default")} to='/allToys'>All Toys</NavLink></li>
+      <li><NavLink className={({ isActive }) => (isActive ? "active" : "default")} to='/myToys'>My Toys</NavLink></li>
+      <li><NavLink className={({ isActive }) => (isActive ? "active" : "default")} to='/addToys'>Add Toys</NavLink></li>
+      <li><NavLink className={({ isActive }) => (isActive ? "active" : "default")} to='/blog'>Blog</NavLink></li>
     </ul>
   </div>
   <div className="navbar-end">
