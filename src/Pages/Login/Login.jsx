@@ -1,11 +1,15 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FaArrowRight,  } from 'react-icons/fa';
 import { AuthContext } from '../../Providers/AuthProvider';
 
 const Login = () => {
+  const [error, setError] = useState('');
     const {signIn, googleLogIn} = useContext(AuthContext);
+    const navigate = useNavigate();
+    const location = useLocation();
+    const from =location.state?.from?.pathname || '/';
 
   const {
     register,
@@ -22,8 +26,9 @@ const Login = () => {
     .then(result => {
       const user = result.user;
       console.log(user);
+      navigate(from, {replace: true});
     })
-    .catch(error => console.log(error))
+    .catch(error => setError(error))
   };
 
   const handleGoogleLogin = () => {
@@ -47,6 +52,7 @@ const Login = () => {
           <label className="ms-2 font-bold text-lg">Password</label>
           <input className="border border-slate-900 block rounded w-full h-12 mb-12 ps-3" {...register("password", { required: true })} />
           {errors.exampleRequired && <span>This field is required</span>}
+          <p className='text-red-500 text-xl my-5'>{error}</p>
           <div className="flex justify-between items-center">
             <div className="w-2/5"><input className="block bg-red-800 text-white font-bold text-lg w-full py-3 rounder cursor-pointer" type="submit" value="Register"/></div>
             <div>

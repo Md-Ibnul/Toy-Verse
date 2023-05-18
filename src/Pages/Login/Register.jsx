@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaArrowRight,  } from 'react-icons/fa';
 import { AuthContext } from "../../Providers/AuthProvider";
 import { updateProfile } from "firebase/auth";
@@ -9,6 +9,7 @@ import { updateProfile } from "firebase/auth";
 
 const Register = () => {
   const {createUser, googleLogIn, updateUserProfile} = useContext(AuthContext);
+  const navigate = useNavigate();
   const [error, setError] = useState('');
   const {
     register,
@@ -35,6 +36,7 @@ const Register = () => {
       .then(() => {console.log("Profile Updated")})
       .catch(error => setError(error.message));
       console.log(user);
+      navigate('/');
     })
     .catch(error => setError(error.message))
   };
@@ -43,6 +45,7 @@ const Register = () => {
     googleLogIn()
     .then(result => {
       const user = result.user;
+      navigate('/')
     })
     .catch(error => setError(error))
   }

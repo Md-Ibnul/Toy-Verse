@@ -33,7 +33,7 @@ const ToysNav = () => {
       <li><NavLink className={({ isActive }) => (isActive ? "active" : "default")} to='/'>Home</NavLink></li>
       <li><NavLink className={({ isActive }) => (isActive ? "active" : "default")} to='/allToys'>All Toys</NavLink></li>
       <li><NavLink className={({ isActive }) => (isActive ? "active" : "default")} to='/myToys'>My Toys</NavLink></li>
-      <li><NavLink className={({ isActive }) => (isActive ? "active" : "default")} to='/addToys'>Add Toys</NavLink></li>
+      <li><NavLink className={({ isActive }) => (isActive ? "active" : "default")} to='/addToy'>Add Toys</NavLink></li>
       <li><NavLink className={({ isActive }) => (isActive ? "active" : "default")} to='/blog'>Blog</NavLink></li>
     </ul>
   </div>
