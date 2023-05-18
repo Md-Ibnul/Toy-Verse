@@ -9,3 +9,7 @@
   .my-btn{
     @apply py-3 px-8 bg-red-600 text-white font-bold border-none hover:bg-slate-800 transition-all ease-linear duration-300
   }
+
+  .tittle-design{
+    @apply after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-3 after:w-20 after:h-1 after:bg-red-800
+  }
