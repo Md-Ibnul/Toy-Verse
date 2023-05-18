@@ -1,6 +1,5 @@
 [
     {
-        "_id": 1,
         "pictureURL": "https://i.ibb.co/Gc1s39W/AADU0004-AACD0052-1-400x.jpg",
         "toyName": "SUPERMAN: MAN OF STEEL",
         "sellerName": "Super Toys Inc.",
@@ -12,7 +11,6 @@
         "description": "The Man of Steel is bringing his Kryptonian powers and the quest for truth and justice to your collection with the Superman Man of Steel Edition One:12 Collective 1/12th Scale Action Figure by Mezco Toys. This highly detailed action figure stands approximately 6.29” tall with over 30 points of articulation and comes outfitted in his iconic suit that proudly displays the ‘House of El’ family crest on the chest, as well as featuring a cape with an integrated posing wire."
       },
     {
-        "_id": 2,
         "pictureURL": "https://i.ibb.co/Cwrf91d/AAAI83-AAAD51-1-400x.jpg",
         "toyName": "DOCTOR STRANGE",
         "sellerName": "Strange Toys Inc.",
@@ -24,7 +22,6 @@
         "description": "This 6.3 Inch tall premium articulated Doctor Strange Action Figure is built to the likeness of the character played by Benedict Cumberbatch, captured with cutting-edge posing technology. Digital colouring faithfully recreates his appearance and facial features which brings the Sorcerer Supreme from scenes from Avengers Infinity War film to your shelves."
       },
     {
-        "_id": 3,
         "pictureURL": "https://i.ibb.co/Wtx63bk/AAAK2-AAAD74-1-400x.jpg",
         "toyName": "BATMAN",
         "sellerName": "Batman Toys Inc.",
@@ -36,7 +33,6 @@
         "description": "This highly articulated 1:12 scale Batman action figure stands approximately 6 inches tall and includes a cloth cape with integrated posing wire as well as an unmasked face portrait of Robert Pattinson as Bruce Wayne with the black paint around his eyes as seen in the 2022 film."
       },
     {
-        "_id": 4,
         "pictureURL": "https://i.ibb.co/S0qyBWG/AAAK347-AABZ0067-1-5000x.jpg",
         "toyName": "JOKER MAFEX ",
         "sellerName": "Joker Toys Inc.",
@@ -48,7 +44,6 @@
         "description": "The maniacal batman villain stands 6.2 inches tall dressed in a velvety blue suit, a yellow vest and a green tie and features multiple points of premium articulation that the MAFEX line is famous for. The highly detailed figure doesn't miss out on featuring characteristic expressions and comes with a handful of accessories like a knife and his iconic BANG! gun that allows you to display him in various iconic poses."
       },
     {
-        "_id": 5,
         "pictureURL": "https://i.ibb.co/ggdSy9s/AAAT7-AAAD0104-1-400x.jpg",
         "toyName": "CAPTAIN AMERICA",
         "sellerName": "Captain Toys Inc.",
@@ -60,7 +55,6 @@
         "description": "You can now recreate the thrilling climax of the film, in which Captain America wields Thor's mighty hammer Mjolnir! A shield, a shield strap, four optional pairs of hands, two optional heads, a broken shield, Mjolnir, and a Mjolnir effect part are included in the highly detailed and highly posable 5.9-inch figure."
       },
     {
-        "_id": 6,
         "pictureURL": "https://i.ibb.co/8YQ91pR/20608840160127-1-400x.png",
         "toyName": "JOHN WICK",
         "sellerName": "John Toys Inc.",
@@ -72,7 +66,6 @@
         "description": "John Wick is back in, and his next target could be you! The master assassin looks breathtaking modeled on Keanu Reeves in this scene from John Wick: Chapter 2, as he walks away from the Rome job. With smoke curling from his gun, this approximately 9-inch tall sculpture comes packaged in a full-color window box."
       },
     {
-        "_id": 7,
         "pictureURL": "https://i.ibb.co/XtfrkZn/Untitled-design-2020-01-11-T151222-418-5000x.jpg",
         "toyName": "AQUAMAN",
         "sellerName": "Aqua Toys Inc.",
@@ -84,7 +77,6 @@
         "description": "Closing the series is the lord of the Seven Seas and King of Atlantis himself as this 6.5-inch Aquaman figure comes highly articulated in his popular animated series avatar. Like all the figures from the series, it is sculpted in the unique style of the show and finished with bright, bold colours."
       },
     {
-        "_id": 8,
         "pictureURL": "https://i.ibb.co/Pg208gC/AABL463-AACD47-1-5000x.jpg",
         "toyName": "G.I. JOE: STORM SHADOW",
         "sellerName": "Joe Toys Inc.",
@@ -96,7 +88,6 @@
         "description": "Attention all G.I. Joe fans! Get ready to meet the latest addition to the One:12 Collective, the one and only Storm Shadow, Cobra Commander's ninja bodyguard. This action figure is not only aesthetically pleasing with its short-sleeved karategi and Cobra insignia, but also comes equipped with a chest harness that can hold 3 kunai in the front and his quiver in the back, and his thigh sheath can hold his nunchaku. But that's not all, Storm Shadow is also ready to infiltrate any mission with his multiple sai, shuriken-throwing FX, a bow with arrows, hand scythes, and more."
       },
     {
-        "_id": 9,
         "pictureURL": "https://i.ibb.co/fnR8WBH/AABT224-AABW382-1-400x.jpg",
         "toyName": "SKELETOR MASTERS",
         "sellerName": "Master Toys Inc.",
@@ -108,7 +99,6 @@
         "description": "​This Skeletor action figure comes with his staff accessories, Great for creating battle scenes and displays authentic to Masters of the Universe: Revelation! This Skeletor action figure is highly posable, with up to 30 working joints, for realistic MOTU® action. Collectors will want to own this action figure, which was created with an expert design that honours the MOTU® legacy while also adding modernised updates."
       },
     {
-        "_id": 10,
         "pictureURL": "https://i.ibb.co/vJ0NZjS/AADM365-AABK10-1-400x.jpg",
         "toyName": "SPIDER-MAN -SIXTH SCALE",
         "sellerName": "Spider Toys Inc.",
@@ -120,7 +110,6 @@
         "description": "This Deluxe Version offers a themed diorama figure base that perfectly captured Sandman’s expression with fine texture surrounded by crumbling structures, with striped warning sign accessories to be another highlight fans won’t want to miss! Proudly brought to you by Superhero Toystore, India's largest and most comprehensive online store for Official Marvel Studios Spiderman Action Figures, Statues, and Pop culture Merchandise!"
       },
     {
-        "_id": 11,
         "pictureURL": "https://i.ibb.co/jy7ht89/AADM577-AAEA22-1-400x.jpg",
         "toyName": "CARNAGE VENOM",
         "sellerName": "Venom Toys Inc.",
@@ -132,7 +121,6 @@
         "description": "This action figure boasts all the dynamic poseability fans have come to expect from the S.H.Figuarts series, and includes 4 optional left hands, 3 right optional hands, an alternate head, and 3 types of tentacle tips. Don't miss your chance to add this ferocious symbiote to your Marvel collection! Proudly brought to you by Superhero Toystore, India's largest and most comprehensive online store for Official Marvel Action Figures, Statues, and Pop culture Merchandise!"
       },
     {
-        "_id": 12,
         "pictureURL": "https://i.ibb.co/jyfsjNx/Untitled-design-2020-01-11-T150442-065-400x.jpg",
         "toyName": "GREEN LANTERN",
         "sellerName": "Lantern Toys Inc.",
@@ -144,7 +132,6 @@
         "description": "For every 90s kid afterschool meant Justice League animated series on cartoon network. jump on this ride of nostalgia and let's go Oldschool with DC Collectibles as they bring you your favourite characters from the show as the super-team comes to your shelves in 2020. Continuing the series is John Stewart himself as this 6.5-inch Green Lantern figure comes highly articulated in his popular animated series avatar."
       },
     {
-        "_id": 13,
         "pictureURL": "https://i.ibb.co/ZfHSP8V/AAAI40-AAAD66-1-5000x.jpg",
         "toyName": "THOR: LOVE & THUNDER",
         "sellerName": "Thor Toys Inc.",
@@ -156,7 +143,6 @@
         "description": "Chris Hemsworth's likeness is highly detailed on the 6.5-inch figure. It comes with a powerful-looking Stormbreaker, lightning effect parts, and a cape with internal wires for posability, making this one of the most dynamic depictions of the hero ever made! This figure is a must-have for Marvel Cinematic Universe fans! Thor: Love and Thunder Thor S.H.Figuarts Action Figure have multiple points of premium articulation, an additional optional head, two pairs of optional hands, the Stormbreaker Axe, and an effect part, making it one of the coolest Marvel figures to date."
       },
     {
-        "_id": 14,
         "pictureURL": "https://i.ibb.co/pZ0sgHK/AAET1-AABK6-1-400x.jpg",
         "toyName": "WOLVERINE DELUXE",
         "sellerName": "Wolf Toys Inc.",
@@ -168,7 +154,6 @@
         "description": "The unstoppable X-Men from the original X-Men film trilogy, including Wolverine, banded together with their younger selves from the past to alter a historic event and fight in an epic battle that could save the future. We and Hot Toys are very excited to officially introduce a 1973 Version of Wolverine as a highly detailed sixth-scale collectible figure inspired by the Marvel X-Men: Days of Future Past film. The highly detailed collectible 11.81-inch figure is based on Hugh Jackman's portrayal of Wolverine in the film."
       },
     {
-        "_id": 15,
         "pictureURL": "https://i.ibb.co/mGmfH5Q/AAAI36-AABK11-1-400x.jpg",
         "toyName": "IRON MAN MARK III (2.0)",
         "sellerName": "Stark Toys Inc.",
@@ -180,7 +165,6 @@
         "description": "Tony Stark's Iron Man has always been one of the most charismatic and iconic heroes in the Marvel universe, and his genius can be seen in the Mark III armour seen in the Marvel Studios film Iron Man. Hot Toys is proud to present the movie-accurate 12.7 inch sixth scale Iron Man Mark III (2.0) Diecast Collectible Figure, engineered with great attention to detail like a Stark Industries product, demonstrating the exquisite design and armour pieces crafted by Tony in the first Iron Man movie, with a detailed Iron Monger themed diorama base."
       },
     {
-        "_id": 16,
         "pictureURL": "https://i.ibb.co/Nxn7sf0/AABF18-AACD41-1-5000x.jpg",
         "toyName": "DOCTOR DOOM",
         "sellerName": "Doom Toys Inc.",
@@ -192,7 +176,6 @@
         "description": "Victor Von Doom went on to become one of the world's most brilliant scientists after overcoming his difficult childhood. His colossal ego, scientific genius, and insatiable desire for power have combined to make him one of the most powerful and terrifying villains in the Marvel Universe! Doctor Doom is dressed in a hooded tunic and a suit of armour made of real metal. His removable cape has a clasp, a real metal chain, and a posing wire built-in. He comes with two unmasked heads and three interchangeable faceplates, allowing him to take on a variety of different looks."
       },
     {
-        "_id": 17,
         "pictureURL": "https://i.ibb.co/wJvS42z/AAJP549-AAHB12-1-400x.jpg",
         "toyName": "BORUTO VINYL",
         "sellerName": "Boruto Toys Inc.",
@@ -204,7 +187,6 @@
         "description": "Boruto's attention to detail is impeccable - from his long unruly blonde hair, which spikes up at the back, to his chunky fringe that falls over a black Konoha headband and frames his grinning face with its faint whisker marks. Dressed in an iconic black and maroon jacket that sits over a white shirt with black pants and sandals, Boruto is always ready for action. The pendant fastened around his neck flows in the wind, adding to the dynamic feel of the figure. The packaging for this collectible is equally impressive, with a simple pattern of yellow dots over a white background on the exterior and a protective sleeve stamped with the Boruto logo. The interior of the packaging is lined with blue, pink, and yellow streaks over a mottled white, making it an aesthetically pleasing addition to any collection."
       },
     {
-        "_id": 18,
         "pictureURL": "https://i.ibb.co/CzDVF9R/AAAM79-AABI626-1-400x.jpg",
         "toyName": "BLACK PANTHER",
         "sellerName": "Panther Toys Inc.",
@@ -216,7 +198,6 @@
         "description": "The Hasbro 6-Inch Black Panther figure is designed to capture the essence of classic Marvel character, bringing the king of wakanda to life with highly-detailed features and vivid colors. With their true-to-character designs, this figures are perfect for collectors and fans alike. With multiple points of articulation, this figure is highly poseable, allowing kids to recreate their favorite Marvel scenes or come up with their own action-packed adventures. "
       },
     {
-        "_id": 19,
         "pictureURL": "https://i.ibb.co/Yp45cgD/AABY367-AABI616-1-5000x.jpg",
         "toyName": "HULK",
         "sellerName": "Stark Toys Inc.",
@@ -228,7 +209,6 @@
         "description": "The Hasbro 9.5-Inch Hulk figure is designed to capture the essence of classic Marvel character, bringing the angry green giant to life with highly-detailed features and vivid colors. With their true-to-character designs, this figures are perfect for collectors and fans alike. With multiple points of articulation, this figure is highly poseable, allowing kids to recreate their favorite Marvel scenes or come up with their own action-packed adventures. Each figure is equipped with moveable limbs and accessories, making them perfect for action-packed playtime."
       },
     {
-        "_id": 20,
         "pictureURL": "https://i.ibb.co/YBjVGbh/AAGB182-AAAD0081-1-5000x.jpg",
         "toyName": "DEADPOOL",
         "sellerName": "Deadpool Toys Inc.",
@@ -240,7 +220,6 @@
         "description": "Armed to the teeth with guns, puns, and things that go boom, Bandai's fully articulated Deadpool SH Figuarts Figure is ready to break through any obstacle especially the proverbial fourth wall. S.H.Figuarts welcomes Wade Wilson as he returns as a fun 6-inch action figure that will blow your mind. It includes numerous eye and hand parts that let you re-create your favourite moments from the Marvel films starring Ryan Reynolds, and it's sculpted in all the detail you've come to expect from S.H.Figuarts over the years with a highly flexible body, the expressive head sculpt and fabric like finish on the suit and its absolutely loaded with accessories."
       },
     {
-        "_id": 21,
         "pictureURL": "https://i.ibb.co/rxwt5qs/AADM365-AAEA25-1-400x.jpg",
         "toyName": "SPIDER-MAN: NO WAY HOME",
         "sellerName": "Spider Toys Inc.",

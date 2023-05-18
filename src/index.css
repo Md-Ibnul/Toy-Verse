@@ -9,6 +9,12 @@
   .my-btn{
     @apply py-3 px-8 bg-red-600 text-white font-bold border-none hover:bg-slate-800 transition-all ease-linear duration-300
   }
+.default{
+  @apply hover:bg-transparent hover:text-red-800 font-bold
+}
+  .active{
+    @apply bg-transparent font-bold text-red-800 after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-0 after:w-3/4  after:h-1 after:bg-red-800
+  }
 
   .tittle-design{
     @apply after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-3 after:w-20 after:h-1 after:bg-red-800

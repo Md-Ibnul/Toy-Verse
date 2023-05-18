@@ -1,8 +1,17 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 import logo from '../assets/Logo.png'
+import { AuthContext } from '../Providers/AuthProvider';
 
 const ToysNav = () => {
+  const{user, logOut} = useContext(AuthContext);
+
+  const handleLogOut = () => {
+    logOut()
+    .then()
+    .catch(error => console.log(error))
+  }
+
     return (
         <div className="navbar bg-base-100 my-container">
   <div className="navbar-start">
@@ -19,9 +28,9 @@ const ToysNav = () => {
     <img className='w-52 mt-2' src={logo} alt="Logo" />
     </Link>
   </div>
-  <div className="navbar-center hidden lg:flex">
+  <div className="navbar-center hidden lg:flex relative">
     <ul className="menu menu-horizontal px-1">
-      <li><Link to='/'>Home</Link></li>
+      <li><NavLink className={({ isActive }) => (isActive ? "active" : "default")} to='/'>Home</NavLink></li>
       <li><Link to='/'>All Toys</Link></li>
       <li><Link to='/'>My Toys</Link></li>
       <li><Link to='/'>Add Toys</Link></li>
@@ -29,7 +38,16 @@ const ToysNav = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn my-btn text-white">Login</a>
+    {
+      user &&
+      <div className="tooltip hover:tooltip-open tooltip-bottom" data-tip={user.displayName}>
+  <img className='w-12 rounded-full' src={user.photoURL} alt="" />
+</div>
+    }
+    { user ?
+      <Link onClick={handleLogOut} className="btn my-btn text-white ms-5">Log Out</Link> :
+      <Link to='/login' className="btn my-btn text-white ms-5">Login</Link>
+    }
   </div>
 </div>
     );

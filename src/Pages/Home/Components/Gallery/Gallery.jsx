@@ -4,7 +4,7 @@ import GalleryImage from './GalleryImage';
 const Gallery = () => {
     const[toys, setToys] = useState([]);
     useEffect(() => {
-        fetch('toys.json')
+        fetch('http://localhost:5000/toys')
         .then(res => res.json())
         .then(data => {
             console.log(data);
