@@ -3,6 +3,7 @@ import { useLoaderData } from 'react-router-dom';
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../../Providers/AuthProvider";
 import Swal from 'sweetalert2'
+import { useTitle } from '../../hooks/useTitle';
 
 const UpdateToy = () => {
     const toy = useLoaderData();
@@ -19,8 +20,9 @@ const UpdateToy = () => {
         availableQuantity,
         description,
       } = toy || {};
-
+useTitle("Update Toys");
       const { user } = useContext(AuthContext);
+
   const {
     register,
     handleSubmit,
@@ -53,7 +55,7 @@ const UpdateToy = () => {
       <h2 className="text-4xl font-bold text-slate-900 uppercase relative inline tittle-design tracking-wider">
         Update Toy
       </h2>
-      <div className="w-2/5 mx-auto text-start mt-14">
+      <div className=" w-4/5 md:w-2/5 mx-auto text-start mt-14">
                 <form onSubmit={handleSubmit(onSubmit)}>
                   <label className="ms-2 font-bold text-lg">Toy Name</label>
                   <input

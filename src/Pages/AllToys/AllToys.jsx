@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import AllToysCard from "./AllToysCard";
 import { Link } from "react-router-dom";
+import { useTitle } from "../../hooks/useTitle";
 
 const AllToys = () => {
   const [allToys, setAllToys] = useState([]);
   const [searchText, setSearchText] = useState("");
-
+useTitle("All Toys")
   useEffect(() => {
     fetch(`http://localhost:5000/allToys`)
       .then((res) => res.json())
@@ -34,7 +35,7 @@ const AllToys = () => {
 
   return (
     <div className="my-container text-center my-16">
-      <div className="grid md:grid-cols-3">
+      <div className="grid md:grid-cols-3 gap-10 md:gap-0">
         <div>
           <div className="dropdown dropdown-right">
             <label tabIndex={0} className="btn m-1">
@@ -67,7 +68,7 @@ const AllToys = () => {
           </button>
         </div>
       </div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mt-16">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mt-16 ms-16 md:ms-0">
         {allToys.map((toy) => (
           <AllToysCard key={toy._id} toy={toy}></AllToysCard>
         ))}
