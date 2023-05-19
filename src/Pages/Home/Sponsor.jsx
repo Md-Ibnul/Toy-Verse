@@ -10,7 +10,7 @@ const Sponsor = () => {
   return (
     <div className="my-container text-center my-16">
         <hr />
-      <h2 className="text-4xl font-bold text-slate-900 uppercase relative inline tittle-design tracking-wider">
+      <h2 className="text-3xl md:text-4xl font-bold text-slate-900 uppercase relative inline tittle-design tracking-wider">
         Our Sponsor Brands
       </h2>
       <div className="carousel carousel-center rounded-box mt-10">

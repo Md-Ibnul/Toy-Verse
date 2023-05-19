@@ -3,6 +3,7 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import CategoryCard from "./CategoryCard";
 import './category.css'
+import { Link } from "react-router-dom";
 
 const Category = () => {
     const [toys, setToys] = useState([]);
@@ -20,7 +21,7 @@ const Category = () => {
       <h2 className="text-4xl font-bold text-slate-800 uppercase tittle-design relative inline tittle-design tracking-wider">
         Shop By Category
       </h2>
-      <div className="mt-14">
+      <div className="mt-14 mb-10">
         <Tabs selectedTabClassName="bg-red-800 text-xl text-white font-bold font-mono rounded-tl-lg rounded-tr-lg">
           <TabList>
             <Tab>Marvel Heros</Tab>
@@ -54,7 +55,7 @@ const Category = () => {
           </TabPanel>
         </Tabs>
       </div>
-      <button className="my-btn">See All Toys</button>
+      <Link to="/allToys" className="my-btn rounded mt-8">See All Toys</Link>
     </div>
   );
 };

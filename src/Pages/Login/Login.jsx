@@ -54,7 +54,7 @@ const Login = () => {
           {errors.exampleRequired && <span>This field is required</span>}
           <p className='text-red-500 text-xl my-5'>{error}</p>
           <div className="flex justify-between items-center">
-            <div className="w-2/5"><input className="block bg-red-800 text-white font-bold text-lg w-full py-3 rounder cursor-pointer" type="submit" value="Register"/></div>
+            <div className="w-2/5"><input className="block bg-red-800 text-white font-bold text-lg w-full py-3 rounder cursor-pointer" type="submit" value="Login"/></div>
             <div>
                 <h4>New Customer? <Link to='/register' className="hover:text-red-700">Register <FaArrowRight className="inline" /></Link></h4></div>
           </div>

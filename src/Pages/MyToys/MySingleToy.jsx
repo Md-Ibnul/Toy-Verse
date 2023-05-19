@@ -5,9 +5,7 @@ import { Link } from "react-router-dom";
 
 
 const MySingleToy = ({ toy, handleDelete }) => {
-  const { _id, pictureURL, toyName, sellerName, sellerEmail } = toy || {};
-
-  
+  const { _id, pictureURL, toyName, sellerName, sellerEmail } = toy || {}; 
 
   return (
     <div>

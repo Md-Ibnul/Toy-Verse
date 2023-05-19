@@ -5,12 +5,14 @@ import Swal from 'sweetalert2'
 
 const MyToys = () => {
     const {user} = useContext(AuthContext);
-    const [myToys, setMyToys] = useState([])
+    const [myToys, setMyToys] = useState([]);
+    
 
     useEffect(() => {
         fetch(`http://localhost:5000/myToys/${user?.email}`)
         .then(res => res.json())
         .then(data => {
+            console.log(data);
             console.log(data);
             setMyToys(data);
         })

@@ -13,6 +13,7 @@ const ToyDetails = () => {
     rating,
     description,
   } = toy || {};
+
   return (
     <div className="my-container my-8">
       <div className="hero min-h-screen">
@@ -27,7 +28,7 @@ const ToyDetails = () => {
             <p className="mt-3 font-bold text-lg font-mono">{subCategory}</p>
             <p className="font-bold font-sans opacity-70">{sellerName}</p>
             <p className="mt-3 font-bold text-2xl font-mono mb-6">Price: ${price}</p>
-            <div className="flex gap-8">
+            <div className="md:flex gap-8">
                 <button className="text-white btn btn-error w-2/4">Add to curt</button>
                 <button className="text-white btn btn-outline btn-error w-2/4">Buy Now</button>
             </div>

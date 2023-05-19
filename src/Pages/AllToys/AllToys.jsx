@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import AllToysCard from "./AllToysCard";
+import { Link } from "react-router-dom";
 
 const AllToys = () => {
   const [allToys, setAllToys] = useState([]);
@@ -17,6 +18,20 @@ const AllToys = () => {
       .then((data) => setAllToys(data));
   };
 
+  const handleLowest = () => {
+    console.log(clicked);
+    fetch('http://localhost:5000//toys/lowPrice')
+      .then((res) => res.json())
+      .then((data) => setAllToys(data));
+  };
+
+  const handleHighest = () => {
+    console.log(clicked);
+    fetch('http://localhost:5000//toys/highPrice')
+      .then((res) => res.json())
+      .then((data) => setAllToys(data));
+  };
+
   return (
     <div className="my-container text-center my-16">
       <div className="grid md:grid-cols-3">
@@ -30,10 +45,10 @@ const AllToys = () => {
               className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a>From Lowest</a>
+                <Link onClick={handleLowest}>From Lowest</Link>
               </li>
               <li>
-                <a>From Highest</a>
+                <Link onClick={handleHighest}>From Highest</Link>
               </li>
             </ul>
           </div>

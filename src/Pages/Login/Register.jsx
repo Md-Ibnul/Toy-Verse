@@ -7,7 +7,7 @@ import { AuthContext } from "../../Providers/AuthProvider";
 
 
 const Register = () => {
-  const {createUser, googleLogIn, updateUserProfile} = useContext(AuthContext);
+  const {createUser, googleLogIn, updateUserProfile , loading} = useContext(AuthContext);
   const navigate = useNavigate();
   const [error, setError] = useState('');
   const {
@@ -32,10 +32,11 @@ const Register = () => {
     .then(result => {
       const user = result.user;
       updateUserProfile(name, photo)
-      .then(() => {console.log("Profile Updated")})
+      .then(() => {
+        navigate('/');
+      })
       .catch(error => setError(error.message));
       console.log(user);
-      navigate('/');
     })
     .catch(error => setError(error.message))
   };

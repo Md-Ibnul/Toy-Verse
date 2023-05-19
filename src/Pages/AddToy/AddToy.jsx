@@ -13,6 +13,7 @@ const AddToy = () => {
     formState: { errors },
   } = useForm();
   const onSubmit = (data, e) =>{ 
+    console.log(data);
 fetch('http://localhost:5000/allToys/', {
   method: "POST",
   headers: {
@@ -52,7 +53,7 @@ e.target.reset();
           <label className="ms-2 font-bold text-lg">Toy PictureURL</label>
           <input
             className="border border-slate-900 block rounded w-full h-12 mb-12 ps-3"
-            {...register("pictureURl", { required: true })}
+            {...register("pictureURL", { required: true })}
           />
 
           <label className="ms-2 font-bold text-lg">Seller Name</label>

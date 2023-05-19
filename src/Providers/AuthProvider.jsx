@@ -34,7 +34,6 @@ const AuthProvider = ({children}) => {
         const unsubscribe =  onAuthStateChanged(auth, currentUser => {
             setUser(currentUser);
             setLoading(false);
-            console.log(currentUser);
         })
         return () => {
             return unsubscribe();
@@ -42,7 +41,6 @@ const AuthProvider = ({children}) => {
     }, [])
 
     const updateUserProfile = (name, photo) => {
-        setLoading(true);
         return updateProfile(auth.currentUser, {
             displayName: name, 
             photoURL: photo
