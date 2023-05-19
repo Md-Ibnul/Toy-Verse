@@ -1,47 +1,50 @@
 import React, { useContext } from "react";
-import { useForm } from "react-hook-form";
+import { FaEdit } from "react-icons/fa";
+import { useForm } from 'react-hook-form';
 import { AuthContext } from "../../Providers/AuthProvider";
-import Swal from 'sweetalert2'
 
-const AddToy = () => {
-  const { user } = useContext(AuthContext);
+const MySingleToy = ({ toy }) => {
+    const {user} = useContext(AuthContext);
+  const {
+    _id,
+    pictureURL,
+    toyName,
+    subCategory,
+    sellerName,
+    sellerEmail,
+    price,
+    rating,
+    description,
+  } = toy || {};
+
   const {
     register,
     handleSubmit,
     watch,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) =>{ 
-fetch('http://localhost:5000/allToys/', {
-  method: "POST",
-  headers: {
-    'Content-Type': 'application/json'
-  },
-  body: JSON.stringify(data)
-})
-.then(res => res.json())
-.then(data => {
-  console.log(data);
-  if(data.insertedId){
-    Swal.fire({
-      position: 'center',
-      icon: 'success',
-      title: 'Your toy has been added.',
-      showConfirmButton: false,
-      timer: 1500
-    })
-
-  }
-})
-}
+  const onSubmit = (data) => {
+    console.log(data);
+  };
 
   return (
-    <div className="my-container text-center my-16">
-      <h2 className="text-4xl font-bold text-slate-900 uppercase relative inline tittle-design tracking-wider">
-        Add A Toy
-      </h2>
-      <div className="w-2/5 mx-auto text-start mt-14">
-        <form onSubmit={handleSubmit(onSubmit)}>
+    <div>
+      <div className="card card-compact w-72 bg-base-100 shadow-xl">
+        <figure>
+          <img src={pictureURL} alt="Image" />
+        </figure>
+        <div className="card-body text-start">
+          <h2 className="card-title">{toyName}</h2>
+          <p>{sellerName}</p>
+          <p>{sellerEmail}</p>
+          <div className="card-actions justify-between">
+          <label htmlFor="my-modal-6"><button className="btn btn-circle btn-outline"><FaEdit className="text-xl" /></button></label>
+            
+{/* ------------Modal Start ---------------*/}
+            <input type="checkbox" id="my-modal-6" className="modal-toggle" />
+<div className="modal modal-center sm:modal-middle">
+  <div className="modal-box">
+  <form onSubmit={handleSubmit(onSubmit)}>
           <label className="ms-2 font-bold text-lg">Toy Name</label>
           <input
             className="border border-slate-900 block rounded w-full h-12 mb-12 ps-3"
@@ -105,9 +108,47 @@ fetch('http://localhost:5000/allToys/', {
           {errors.exampleRequired && <span>This field is required</span>}
           <input className="block bg-red-800 text-white font-bold text-lg w-full py-3 rounded cursor-pointer" value="Add" type="submit" />
         </form>
+        <label className="btn btn-circle btn-outline" htmlFor="my-modal-6"> X</label>
+  </div>
+</div>
+{/* Modal End */}
+            <button className="btn btn-circle btn-outline">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+
+          </div>
+        </div>
       </div>
     </div>
   );
 };
 
-export default AddToy;
+export default MySingleToy;
+
+{/* The button to open modal */}
+{/* <label htmlFor="my-modal-6" className="btn">open modal</label> */}
+
+{/* Put this part before </body> tag */}
+{/* <input type="checkbox" id="my-modal-6" className="modal-toggle" />
+<div className="modal modal-bottom sm:modal-middle">
+  <div className="modal-box">
+    <h3 className="font-bold text-lg">Congratulations random Internet user!</h3>
+    <p className="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+    <div className="modal-action">
+      <label htmlFor="my-modal-6" className="btn">Yay!</label>
+    </div>
+  </div>
+</div> */}

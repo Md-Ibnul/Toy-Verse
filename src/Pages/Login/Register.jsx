@@ -3,7 +3,6 @@ import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 import { FaArrowRight,  } from 'react-icons/fa';
 import { AuthContext } from "../../Providers/AuthProvider";
-import { updateProfile } from "firebase/auth";
 
 
 
@@ -45,7 +44,7 @@ const Register = () => {
     googleLogIn()
     .then(result => {
       const user = result.user;
-      navigate('/')
+      navigate('/');
     })
     .catch(error => setError(error))
   }
@@ -72,7 +71,7 @@ const Register = () => {
           {errors.exampleRequired && <span>This field is required</span>}
           <p className="ms-2 text-red-500 mb-3">{error}</p>
           <div className="flex justify-between items-center">
-            <div className="w-2/5"><input className="block bg-red-800 text-white font-bold text-lg w-full py-3 rounder cursor-pointer" type="submit" value="Register"/></div>
+            <div className="w-2/5"><input className="block bg-red-800 text-white font-bold text-lg w-full py-3 rounded cursor-pointer" type="submit" value="Register"/></div>
             <div>
                 <h4>Returning Customer? <Link to='/login'  className="hover:text-red-700">Login <FaArrowRight className="inline" /></Link></h4></div>
           </div>
