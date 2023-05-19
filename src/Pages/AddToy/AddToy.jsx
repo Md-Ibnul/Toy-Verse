@@ -97,8 +97,8 @@ fetch('http://localhost:5000/allToys/', {
           />
 
           <label className="ms-2 font-bold text-lg">Description</label>
-          <input
-            className="border border-slate-900 block rounded w-full h-12 mb-12 ps-3"
+          <textarea
+            className="border border-slate-900 block rounded w-full h-28 mb-12 ps-3"
             {...register("description", { required: true })}
           />
 

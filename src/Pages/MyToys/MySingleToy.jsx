@@ -14,6 +14,7 @@ const MySingleToy = ({ toy }) => {
     sellerEmail,
     price,
     rating,
+    availableQuantity,
     description,
   } = toy || {};
 
@@ -38,7 +39,7 @@ const MySingleToy = ({ toy }) => {
           <p>{sellerName}</p>
           <p>{sellerEmail}</p>
           <div className="card-actions justify-between">
-          <label htmlFor="my-modal-6"><button className="btn btn-circle btn-outline"><FaEdit className="text-xl" /></button></label>
+          <label className="btn btn-circle btn-outline" htmlFor="my-modal-6"><FaEdit className="text-xl" /></label>
             
 {/* ------------Modal Start ---------------*/}
             <input type="checkbox" id="my-modal-6" className="modal-toggle" />
@@ -47,13 +48,13 @@ const MySingleToy = ({ toy }) => {
   <form onSubmit={handleSubmit(onSubmit)}>
           <label className="ms-2 font-bold text-lg">Toy Name</label>
           <input
-            className="border border-slate-900 block rounded w-full h-12 mb-12 ps-3"
+            className="border border-slate-900 block rounded w-full h-12 mb-12 ps-3" defaultValue={toyName}
             {...register("toyName", { required: true })}
           />
 
           <label className="ms-2 font-bold text-lg">Toy PictureURL</label>
           <input
-            className="border border-slate-900 block rounded w-full h-12 mb-12 ps-3"
+            className="border border-slate-900 block rounded w-full h-12 mb-12 ps-3" defaultValue={pictureURL}
             {...register("pictureURl", { required: true })}
           />
 
@@ -73,7 +74,7 @@ const MySingleToy = ({ toy }) => {
 
           <label className="ms-2 font-bold text-lg">Category</label>
           <select
-            className="border border-slate-900 block rounded w-full h-12 mb-12 ps-3"
+            className="border border-slate-900 block rounded w-full h-12 mb-12 ps-3" defaultValue={subCategory}
             {...register("subCategory")}
           >
             <option value="Marvel Superhero">Marvel</option>
@@ -83,32 +84,32 @@ const MySingleToy = ({ toy }) => {
 
           <label className="ms-2 font-bold text-lg">Price</label>
           <input
-            className="border border-slate-900 block rounded w-full h-12 mb-12 ps-3"
+            className="border border-slate-900 block rounded w-full h-12 mb-12 ps-3" defaultValue={price}
             {...register("price", { required: true })}
           />
 
           <label className="ms-2 font-bold text-lg">Rating</label>
           <input
-            className="border border-slate-900 block rounded w-full h-12 mb-12 ps-3"
+            className="border border-slate-900 block rounded w-full h-12 mb-12 ps-3" defaultValue={rating}
             {...register("rating", { required: true })}
           />
 
           <label className="ms-2 font-bold text-lg">Available Quantity</label>
           <input
-            className="border border-slate-900 block rounded w-full h-12 mb-12 ps-3"
+            className="border border-slate-900 block rounded w-full h-12 mb-12 ps-3" defaultValue={availableQuantity}
             {...register("availableQuantity", { required: true })}
           />
 
           <label className="ms-2 font-bold text-lg">Description</label>
-          <input
-            className="border border-slate-900 block rounded w-full h-12 mb-12 ps-3"
+          <textarea
+            className="border border-slate-900 block rounded w-full h-28 mb-12 ps-3" defaultValue={description}
             {...register("description", { required: true })}
           />
 
           {errors.exampleRequired && <span>This field is required</span>}
           <input className="block bg-red-800 text-white font-bold text-lg w-full py-3 rounded cursor-pointer" value="Add" type="submit" />
         </form>
-        <label className="btn btn-circle btn-outline" htmlFor="my-modal-6"> X</label>
+        <label className="btn btn-error w-full btn-outline mt-5" htmlFor="my-modal-6"> Close</label>
   </div>
 </div>
 {/* Modal End */}
