@@ -8,10 +8,11 @@ const AddToy = () => {
   const {
     register,
     handleSubmit,
+    reset,
     watch,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) =>{ 
+  const onSubmit = (data, e) =>{ 
 fetch('http://localhost:5000/allToys/', {
   method: "POST",
   headers: {
@@ -30,10 +31,10 @@ fetch('http://localhost:5000/allToys/', {
       showConfirmButton: false,
       timer: 1500
     })
-
   }
 })
-}
+e.target.reset();
+};
 
   return (
     <div className="my-container text-center my-16">
