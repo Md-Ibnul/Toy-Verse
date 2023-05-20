@@ -76,7 +76,7 @@ const AllToys = () => {
                   <th>
                     <Link to={`/toyDetails/${toy._id}`}>
                       <button className="btn btn-warning btn-xs text-white">
-                        <FaEye className="me-2"/>
+                        <FaEye className="me-2 inline"/>
                         View Details
                       </button>
                     </Link>
