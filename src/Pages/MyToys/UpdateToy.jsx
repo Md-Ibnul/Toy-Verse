@@ -31,7 +31,7 @@ useTitle("Update Toys");
   } = useForm();
   const onSubmit = (data) =>{ 
     console.log(data);
-    fetch(`http://localhost:5000/allToys/${_id}`, {
+    fetch(`https://toys-verse-server-site.vercel.app/allToys/${_id}`, {
       method: "PUT",
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify(data),

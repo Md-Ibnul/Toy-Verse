@@ -59,7 +59,7 @@ const Register = () => {
         </h2>
         <hr />
       </div>
-      <div className="w-2/5 mx-auto">
+      <div className="w-4/5 md:w-2/5 mx-auto">
         <form onSubmit={handleSubmit(onSubmit)}>
           <label className="ms-2 font-bold text-lg">Name</label>
           <input
@@ -94,7 +94,7 @@ const Register = () => {
                 value="Register"
               />
             </div>
-            <div>
+            <div className="w-1/2">
               <h4>
                 Returning Customer?{" "}
                 <Link to="/login" className="hover:text-red-700">

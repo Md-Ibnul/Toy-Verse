@@ -8,13 +8,13 @@ const AllToys = () => {
   const [searchText, setSearchText] = useState("");
   useTitle("All Toys");
   useEffect(() => {
-    fetch(`http://localhost:5000/allToys`)
+    fetch(`https://toys-verse-server-site.vercel.app/allToys`)
       .then((res) => res.json())
       .then((data) => setAllToys(data));
   }, []);
 
   const handleSearch = () => {
-    fetch(`http://localhost:5000/toySearchByName/${searchText}`)
+    fetch(`https://toys-verse-server-site.vercel.app/toySearchByName/${searchText}`)
       .then((res) => res.json())
       .then((data) => setAllToys(data));
   };
@@ -52,31 +52,31 @@ const AllToys = () => {
               </tr>
             </thead>
             <tbody>
-              {allToys.map((toy, index) => (
+              {allToys?.map((toy, index) => (
                 // {/* row 1 */}
-                <tr>
+                <tr key={toy?._id}>
                   <th>{index + 1}</th>
                   <td>
-                    <h4>{toy?.sellerName}</h4>
-                    <p>{toy?.sellerEmail}</p>
+                    <>
+                    <h4 className="font-bold text-lg">{toy?.sellerName}</h4>
+                    <p>{toy?.sellerEmail}</p></>
                   </td>
                   <td>
-                    <div>
-                      <h3>{toy?.toyName}</h3>
+                    <>
+                      <h4 className="font-bold">{toy?.toyName}</h4>
                       <p>{toy?.subCategory}</p>
-                    </div>
+                    </>
                   </td>
                   <td>
-                    <h4>{toy?.price}</h4>
+                    <h4b className="font-bold">{toy?.price}</h4b>
                   </td>
                   <td>
-                    <h4>{toy?.availableQuantity}</h4>
+                    <h4 className="font-bold">{toy?.availableQuantity}</h4>
                   </td>
                   <th>
                     <Link to={`/toyDetails/${toy._id}`}>
-                      <button className="btn btn-warning btn-xs">
-                        {" "}
-                        <FaEye />
+                      <button className="btn btn-warning btn-xs text-white">
+                        <FaEye className="me-2"/>
                         View Details
                       </button>
                     </Link>

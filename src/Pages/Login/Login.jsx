@@ -47,7 +47,7 @@ const Login = () => {
         </h2>
         <hr />
       </div>
-      <div className="w-2/5 mx-auto">
+      <div className="w-4/5 md:w-2/5 mx-auto">
         <form onSubmit={handleSubmit(onSubmit)}>
           <label className="ms-2 font-bold text-lg">Email</label>
           <input
@@ -70,9 +70,9 @@ const Login = () => {
                 value="Login"
               />
             </div>
-            <div>
+            <div className="w-1/2">
               <h4>
-                New Customer?{" "}
+                New Customer?
                 <Link to="/register" className="hover:text-red-700">
                   Register <FaArrowRight className="inline" />
                 </Link>
