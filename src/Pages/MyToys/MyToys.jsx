@@ -1,19 +1,18 @@
 import React, { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
-import MySingleToy from "./MySingleToy";
 import Swal from "sweetalert2";
 import { useTitle } from "../../hooks/useTitle";
+import { Link } from "react-router-dom";
+import { FaArrowDown, FaEdit } from "react-icons/fa";
 
 const MyToys = () => {
   const { user } = useContext(AuthContext);
   const [myToys, setMyToys] = useState([]);
-  useTitle("My Toys")
+  useTitle("My Toys");
   useEffect(() => {
     fetch(`http://localhost:5000/myToys/${user?.email}`)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
-        console.log(data);
         setMyToys(data);
       });
   }, [user]);
@@ -45,19 +44,72 @@ const MyToys = () => {
     });
   };
 
+  const handleSort = () => {
+    fetch(`http://localhost:5000/myToys/${user?.email}/price`)
+      .then((res) => res.json())
+      .then((data) => {
+        setMyToys(data);
+      });
+  }
+
   return (
     <div className="my-container text-center my-16">
       <h2 className="text-4xl font-bold text-slate-900 uppercase relative inline tittle-design tracking-wider">
         All My Toys
       </h2>
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 mt-20 ms-14 md:ms-0">
-        {myToys.map((toy) => (
-          <MySingleToy
-            key={toy._id}
-            toy={toy}
-            handleDelete={handleDelete}
-          ></MySingleToy>
-        ))}
+      <div className="my-10">
+        <div className="overflow-x-auto w-full">
+          <table className="table w-full">
+            {/* head */}
+            <thead>
+              <tr>
+                <th></th>
+                <th>Toy Photo</th>
+                <th>Toy Name</th>
+                <th>Seller</th>
+                <th  onClick={handleSort}><div className="btn btn-info btn-xs">Price<FaArrowDown className="inline ms-1"/></div> </th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              {myToys.map((toy, index) => (
+                // {/* row 1 */}
+                <tr>
+                  <th>{index + 1}</th>
+                  <td>
+                    <div className="w-14">
+                      <img src={toy.pictureURL} alt="Image" />
+                    </div>
+                  </td>
+                  <td>
+                    <div>
+                      <h3>{toy.toyName}</h3>
+                      <p>{toy.subCategory}</p>
+                    </div>
+                  </td>
+                  <td>
+                    <h4>{toy.sellerName}</h4>
+                    <p>{toy.sellerEmail}</p>
+                  </td>
+                  <td>
+                    <h4>{toy.price}</h4>
+                  </td>
+                  <th>
+                    <Link to={`/updateToy/${toy._id}`}>
+                      <button className="btn btn-warning btn-xs"> <FaEdit />
+                        Edit</button>
+                    </Link>
+                  </th>
+                  <th>
+                    <button onClick={() => handleDelete(toy._id)} className="btn btn-error text-white btn-xs">delete</button>
+                  </th>
+                </tr>
+              ))}
+              ;
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   );
