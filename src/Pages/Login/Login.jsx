@@ -22,8 +22,8 @@ const Login = () => {
     const email = data.email;
     const password = data.password;
     console.log(email, password);
-    
-    setError('');
+
+    setError("");
 
     signIn(email, password)
       .then((result) => {
@@ -33,7 +33,8 @@ const Login = () => {
       })
       .catch((error) => {
         console.log(error);
-        setError(error.message);});
+        setError(error.message);
+      });
   };
 
   const handleGoogleLogin = () => {

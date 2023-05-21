@@ -6,7 +6,7 @@ import { useTitle } from "../../hooks/useTitle";
 
 const AddToy = () => {
   const { user } = useContext(AuthContext);
-useTitle("Add Toy");
+  useTitle("Add Toy");
   const {
     register,
     handleSubmit,

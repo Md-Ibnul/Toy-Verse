@@ -14,7 +14,9 @@ const AllToys = () => {
   }, []);
 
   const handleSearch = () => {
-    fetch(`https://toys-verse-server-site.vercel.app/toySearchByName/${searchText}`)
+    fetch(
+      `https://toys-verse-server-site.vercel.app/toySearchByName/${searchText}`
+    )
       .then((res) => res.json())
       .then((data) => setAllToys(data));
   };
@@ -58,8 +60,9 @@ const AllToys = () => {
                   <th>{index + 1}</th>
                   <td>
                     <>
-                    <h4 className="font-bold text-lg">{toy?.sellerName}</h4>
-                    <p>{toy?.sellerEmail}</p></>
+                      <h4 className="font-bold text-lg">{toy?.sellerName}</h4>
+                      <p>{toy?.sellerEmail}</p>
+                    </>
                   </td>
                   <td>
                     <>
@@ -76,7 +79,7 @@ const AllToys = () => {
                   <th>
                     <Link to={`/toyDetails/${toy._id}`}>
                       <button className="btn btn-warning btn-xs text-white">
-                        <FaEye className="me-2 inline"/>
+                        <FaEye className="me-2 inline" />
                         View Details
                       </button>
                     </Link>

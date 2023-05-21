@@ -46,14 +46,18 @@ const MyToys = () => {
   };
 
   const handleSortLow = () => {
-    fetch(`https://toys-verse-server-site.vercel.app/myToys/${user?.email}/lowPrice`)
+    fetch(
+      `https://toys-verse-server-site.vercel.app/myToys/${user?.email}/lowPrice`
+    )
       .then((res) => res.json())
       .then((data) => {
         setMyToys(data);
       });
   };
   const handleSortHigh = () => {
-    fetch(`https://toys-verse-server-site.vercel.app/myToys/${user?.email}/highPrice`)
+    fetch(
+      `https://toys-verse-server-site.vercel.app/myToys/${user?.email}/highPrice`
+    )
       .then((res) => res.json())
       .then((data) => {
         setMyToys(data);
@@ -76,8 +80,11 @@ const MyToys = () => {
                 <th>Toy Name</th>
                 <th>Seller</th>
                 <th>
-                <div className="dropdown dropdown-bottom dropdown-start">
-                    <label tabIndex={0} className="btn btn-xs btn-info text-white m-1">
+                  <div className="dropdown dropdown-bottom dropdown-start">
+                    <label
+                      tabIndex={0}
+                      className="btn btn-xs btn-info text-white m-1"
+                    >
                       Sort By Price <FaArrowDown className="ms-2" />
                     </label>
                     <ul
@@ -93,8 +100,7 @@ const MyToys = () => {
                     </ul>
                   </div>
                 </th>
-                <th>
-                </th>
+                <th></th>
                 <th></th>
               </tr>
             </thead>

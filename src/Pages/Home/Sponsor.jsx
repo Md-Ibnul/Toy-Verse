@@ -9,58 +9,34 @@ import Avenger from "../../assets/Avenger.jpg";
 const Sponsor = () => {
   return (
     <div className="my-container text-center my-16">
-        <hr />
+      <hr />
       <h2 className="text-3xl md:text-4xl font-bold text-slate-900 uppercase relative inline tittle-design tracking-wider">
         Our Sponsor Brands
       </h2>
       <div className="carousel carousel-center rounded-box mt-10">
         <div className="carousel-item">
-          <img
-            src={spider}
-            alt="Image"
-          />
+          <img src={spider} alt="Image" />
         </div>
         <div className="carousel-item">
-          <img
-            src={Anime}
-            alt="Image"
-          />
+          <img src={Anime} alt="Image" />
         </div>
         <div className="carousel-item">
-          <img
-            src={Disney}
-            alt="Image"
-          />
+          <img src={Disney} alt="Image" />
         </div>
         <div className="carousel-item">
-          <img
-            src={DC}
-            alt="Image"
-          />
+          <img src={DC} alt="Image" />
         </div>
         <div className="carousel-item">
-          <img
-            src={marvel}
-            alt="Image"
-          />
+          <img src={marvel} alt="Image" />
         </div>
         <div className="carousel-item">
-          <img
-            src={Avenger}
-            alt="Image"
-          />
+          <img src={Avenger} alt="Image" />
         </div>
         <div className="carousel-item">
-          <img
-            src={Anime}
-            alt="Image"
-          />
+          <img src={Anime} alt="Image" />
         </div>
         <div className="carousel-item">
-          <img
-            src={Disney}
-            alt="Image"
-          />
+          <img src={Disney} alt="Image" />
         </div>
       </div>
     </div>
