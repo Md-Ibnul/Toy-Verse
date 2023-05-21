@@ -22,14 +22,18 @@ const Login = () => {
     const email = data.email;
     const password = data.password;
     console.log(email, password);
+    
+    setError('');
 
     signIn(email, password)
       .then((result) => {
-        const user = result.user;
-        console.log(user);
+        const loggedUser = result.user;
+        console.log(loggedUser);
         navigate(from, { replace: true });
       })
-      .catch((error) => setError(error));
+      .catch((error) => {
+        console.log(error);
+        setError(error.message);});
   };
 
   const handleGoogleLogin = () => {

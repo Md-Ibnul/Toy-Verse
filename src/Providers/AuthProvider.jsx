@@ -22,7 +22,7 @@ const AuthProvider = ({children}) => {
     }
     
     const signIn =(email, password) => {
-        setLoading(true);
+        // setLoading(true);
         return signInWithEmailAndPassword(auth, email, password);
     }
 
@@ -40,12 +40,12 @@ const AuthProvider = ({children}) => {
         }
     }, [])
 
-    const updateUserProfile = (name, photo) => {
-        return updateProfile(auth.currentUser, {
-            displayName: name, 
-            photoURL: photo
-        });
-    }
+    // const updateUserProfile = (name, photo) => {
+    //     return updateProfile(auth.currentUser, {
+    //         displayName: name, 
+    //         photoURL: photo
+    //     });
+    // }
 
     const authInfo = {
         user,
@@ -54,7 +54,7 @@ const AuthProvider = ({children}) => {
         googleLogIn,
         signIn,
         logOut,
-        updateUserProfile,
+        // updateUserProfile,
     }
     return (
         <AuthContext.Provider value={authInfo}>
